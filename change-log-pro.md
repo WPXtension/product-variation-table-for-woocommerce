@@ -1,3 +1,9 @@
+### = 1.6.0 [13-11-2024] Wednesday =
+* Update: Codebase based on Plugin Check Plugin(PCP).
+* Feature: Global variation table condition option.
+* Feature: Exclude/Include condition option for Shortcode.
+* Compatibility: WordPress 6.7.
+
 ### = 1.5.4 [05-09-2024] Thursday =
 * Update: Codebase based on Plugin Check Plugin(PCP).
 * Compatibility: WooCommerce 9.2.
