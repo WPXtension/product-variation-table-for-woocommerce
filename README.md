@@ -1,2 +1,5 @@
 # PVT - Product Variation Table for WooCommerce
-PVT - Product Variation Table for WooCommerce features and changelog
+
+- [Free vs Pro](https://github.com/WPXtension/product-variation-table-for-woocommerce/blob/main/free-vs-pro.md) - Free vs Pro version
+- [Free Changelog](https://github.com/WPXtension/product-variation-table-for-woocommerce/blob/main/changelog-free.md) - Free version Changelog
+- [Pro Changelog](https://github.com/WPXtension/product-variation-table-for-woocommerce/blob/main/change-log-pro.md) - Pro version Changelog
