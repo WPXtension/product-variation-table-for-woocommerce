@@ -1,3 +1,8 @@
+### = 1.6.0 [13-11-2024] Wednesday =
+* Update: Codebase based on Plugin Check Plugin(PCP).
+* Dev: `pvtfw_row_cart_btn_is` & `pvtfw_row_cart_btn_oos` now located at compatibility.php. Any snippet you are using with the mentioned filter hooks should use `echo` rather than `return`.
+* Compatibility: WordPress 6.7.
+
 ### = 1.5.4 [10-09-2024] Tuesday =
 * Fix: PHP Fatal error:  Uncaught Error: Class "PVTFW_COMMON" not found.
 
