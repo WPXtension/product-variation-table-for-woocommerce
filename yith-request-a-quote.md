@@ -1223,7 +1223,7 @@ add_action('template_redirect', function(){
 
 });
 ```
-### For Out-of-Stock Variation Without Out-of_stock Button (Premium)
+### For Out-of-Stock Variation Without Out-of-stock Button (Premium)
 [^ Go to Top](#snippets-for-yith-request-a-quote-premium-plugin)
 ```
 add_filter('pvtfw_row_cart_btn_oos', function($default,$product_id, $cart_url, $product_url, $variant_id, $text){
