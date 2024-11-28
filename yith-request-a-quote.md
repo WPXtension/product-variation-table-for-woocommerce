@@ -1,9 +1,10 @@
-# PVT Free version Snippets for YITH Request a Quote Free Plugin
+### Snippets for YITH Request a Quote Free Plugin
 
 - [For In-Stock Variation Without Add to Cart Button](#for-in-stock-variation-without-add-to-cart-button) - Without Add to Cart Button
 - [For In-Stock Variation With Add to Cart Button](#for-in-stock-variation-with-add-to-cart-button) - With Add to Cart Button
 
-## For In-Stock Variation Without Add to Cart Button
+### For In-Stock Variation Without Add to Cart Button
+[^ Go to Top](#snippets-for-yith-request-a-quote-free-plugin)
 ```
 // PVT filtering In Stock Button
 add_filter('pvtfw_row_cart_btn_is', function($default,$product_id, $cart_url, $product_url, $variant_id, $text){
@@ -143,7 +144,8 @@ add_action('template_redirect', function(){
 // Remove the default cart button with each row
 add_filter('pvtfw_disable_add_to_cart_button', '__return_true');
 ```
-## For In-Stock Variation With Add to Cart Button
+### For In-Stock Variation With Add to Cart Button
+[^ Go to Top](#snippets-for-yith-request-a-quote-free-plugin)
 ```
 // PVT filtering In Stock Button
 add_filter('pvtfw_row_cart_btn_is', function($default,$product_id, $cart_url, $product_url, $variant_id, $text){
