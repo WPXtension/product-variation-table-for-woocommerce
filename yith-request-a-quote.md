@@ -641,7 +641,7 @@ add_filter('pvtfw_row_cart_btn_is', function($default,$product_id, $cart_url, $p
 		<?php
 
 	}
-	echo return ob_get_clean();	
+	echo ob_get_clean();	
 }, 10, 6);
 
 
@@ -967,7 +967,7 @@ add_filter('pvtfw_row_cart_btn_is', function($default,$product_id, $cart_url, $p
 		<?php
 
 	}
-	echo return ob_get_clean();	
+	echo ob_get_clean();	
 }, 10, 6);
 
 
@@ -1290,7 +1290,7 @@ add_filter('pvtfw_row_cart_btn_oos', function($default,$product_id, $cart_url, $
 		<?php
 
 	}
-	echo return ob_get_clean();	
+	echo ob_get_clean();	
 }, 10, 6);
 
 
@@ -1616,7 +1616,7 @@ add_filter('pvtfw_row_cart_btn_oos', function($default,$product_id, $cart_url, $
 		<?php
 
 	}
-	echo return ob_get_clean();	
+	echo ob_get_clean();	
 }, 10, 6);
 
 
@@ -1945,8 +1945,7 @@ add_filter('pvtfw_row_cart_btn_oos', function($default,$product_id, $cart_url, $
 		<?php
 
 	}
-	// echo ob_get_clean(); // For version 1.6.0 or above
-	return ob_get_clean();	
+	echo ob_get_clean();	
 }, 10, 6);
 
 
