@@ -1874,6 +1874,7 @@ add_action('template_redirect', function(){
 });
 ```
 ### Role base quote button
+[^ Go to Top](#snippets-for-yith-request-a-quote-premium-plugin)
 
 > [!IMPORTANT]
 > - You can also use it for the *In-stock variation* as well. Just replace `pvtfw_row_cart_btn_oos` with `pvtfw_row_cart_btn_is`
