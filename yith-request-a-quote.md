@@ -13,8 +13,8 @@
 
 - [For In-Stock Variation Without Add to Cart Button](#for-in-stock-variation-without-add-to-cart-button-premium) - Without Add to Cart Button
 - [For In-Stock Variation With Add to Cart Button](#for-in-stock-variation-with-add-to-cart-button-premium) - With Add to Cart Button
-- [For Out-of-Stock Variation Without Out-of-Stock Button](#for-in-stock-variation-without-add-to-cart-button-premium) - Without Out Of Stock Button
-- [For Out-of-Stock Variation With Out-of-Stock Button](#for-in-stock-variation-with-add-to-cart-button-premium) - With Out Of Stock Button
+- [For Out-of-Stock Variation Without Out-of-Stock Button](#for-out-of-stock-variation-without-out-of-stock-button-premium) - Without Out Of Stock Button
+- [For Out-of-Stock Variation With Out-of-Stock Button](#for-out-of-stock-variation-with-out-of-stock-button-premium) - With Out Of Stock Button
 
 ### For In-Stock Variation Without Add to Cart Button (Free)
 [^ Go to Top](#snippets-for-yith-request-a-quote-free-plugin)
