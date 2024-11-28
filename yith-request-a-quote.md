@@ -1,7 +1,7 @@
 # PVT Free version Snippets for YITH Request a Quote Free Plugin
 
 - [For In-Stock Variation Without Add to Cart Button](#for-in-stock-variation-without-add-to-cart-button) - Without Add to Cart Button
-- [For In-Stock Variation With Add to Cart Button](#for-in-stock-variation-without-add-to-cart-button) - With Add to Cart Button
+- [For In-Stock Variation With Add to Cart Button](#for-in-stock-variation-with-add-to-cart-button) - With Add to Cart Button
 
 ## For In-Stock Variation Without Add to Cart Button
 ```
