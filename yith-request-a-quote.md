@@ -1883,70 +1883,79 @@ add_action('template_redirect', function(){
 
 ```
 // PVT filtering Out of Stock Button
-add_filter('pvtfw_row_cart_btn_oos', function($default,$product_id, $cart_url, $product_url, $variant_id, $text){
+add_filter('pvtfw_row_cart_btn_is', function($default,$product_id, $cart_url, $product_url, $variant_id, $text){
 	
-	global $product;
+	if( YITH_Request_Quote_Premium()->check_user_type() ){
+	
+		global $product;
 
-	ob_start();
+		ob_start();
 
-	if( YITH_Request_Quote()->exists($product_id, $variant_id) ){
+		if( YITH_Request_Quote()->exists($product_id, $variant_id) ){
+
+			?>
+			<div class="yith_ywraq_add_item_response-<?php echo absint($product_id); ?> yith_ywraq_add_item_response_message">
+				<?php echo $message = ywraq_get_label( 'already_in_quote' ); ?>
+			</div>
+			<div class="yith_ywraq_add_item_browse-list-<?php echo absint($product_id); ?> yith_ywraq_add_item_browse_message">
+				<a href="<?php echo YITH_Request_Quote()->get_raq_page_url(); ?>"><?php echo ywraq_get_browse_list_message(); ?></a>
+			</div>
+			<?php
+		}
+		else{ 
+			$exists = $product->is_type( 'variable' ) ? false : YITH_Request_Quote()->exists( $product_id, $variant_id );
+			$rqa_url = YITH_Request_Quote()->get_raq_page_url();
+			$label_browse = ywraq_get_label( 'browse_list' );
+
 
 		?>
-		<div class="yith_ywraq_add_item_response-<?php echo absint($product_id); ?> yith_ywraq_add_item_response_message">
-			<?php echo $message = ywraq_get_label( 'already_in_quote' ); ?>
-		</div>
-		<div class="yith_ywraq_add_item_browse-list-<?php echo absint($product_id); ?> yith_ywraq_add_item_browse_message">
-			<a href="<?php echo YITH_Request_Quote()->get_raq_page_url(); ?>"><?php echo ywraq_get_browse_list_message(); ?></a>
-		</div>
-		<?php
-	}
-	else{ 
-		$exists = $product->is_type( 'variable' ) ? false : YITH_Request_Quote()->exists( $product_id, $variant_id );
-		$rqa_url = YITH_Request_Quote()->get_raq_page_url();
-		$label_browse = ywraq_get_label( 'browse_list' );
-		
+			<form class="pvt-yith-quote-support cart">
 
-	?>
-		<form class="pvt-yith-quote-support cart">
-			
-			<?php
-				$variations = new WC_Product_Variation($variant_id);
-				foreach( $variations->get_variation_attributes() as $key => $variation ){
-					echo "<input type='hidden' name='".$key."' value='".$variation."'>";
-				}
-			?>
-			
-			<input type='hidden' name='quantity' class='qty' value='1'>
-			<input type="hidden" name="add-to-cart" value="<?php echo absint($product_id); ?>">
-			<input type="hidden" name="product_id" value="<?php echo absint($product_id); ?>">
-			<input type="hidden" name="variation_id" class="variation_id" value="<?php echo absint($variant_id); ?>">
+				<?php
+					$variations = new WC_Product_Variation($variant_id);
+					foreach( $variations->get_variation_attributes() as $key => $variation ){
+						echo "<input type='hidden' name='".$key."' value='".$variation."'>";
+					}
+				?>
+
+				<input type='hidden' name='quantity' class='qty' value='1'>
+				<input type="hidden" name="add-to-cart" value="<?php echo absint($product_id); ?>">
+				<input type="hidden" name="product_id" value="<?php echo absint($product_id); ?>">
+				<input type="hidden" name="variation_id" class="variation_id" value="<?php echo absint($variant_id); ?>">
 
 
-			<div class="pvt-yith-ywraq-add-to-quote add-to-quote-<?php echo absint($variant_id); ?> near-add-to-cart">
-				<div class="pvt-yith-ywraq-add-button show" style="display:block">
+				<div class="pvt-yith-ywraq-add-to-quote add-to-quote-<?php echo absint($variant_id); ?> near-add-to-cart">
+					<div class="pvt-yith-ywraq-add-button show" style="display:block">
 
-					<a href="#" class="pvt-add-request-quote-button button" data-product_id="<?php echo absint( $product_id ); ?>" data-variation_id="<?php echo absint( $variant_id ); ?>">Ask for a product</a>
-					<img src="/wp-content/plugins/yith-woocommerce-request-a-quote-premium/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden">
+						<a href="#" class="pvt-add-request-quote-button button" data-product_id="<?php echo absint( $product_id ); ?>" data-variation_id="<?php echo absint( $variant_id ); ?>">Ask for a product</a>
+						<img src="/wp-content/plugins/yith-woocommerce-request-a-quote-premium/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden">
+					</div>
+							<div
+						class="yith_ywraq_add_item_product-response-<?php echo esc_attr( $variant_id ); ?> yith_ywraq_add_item_product_message hide hide-when-removed"
+						style="display:none" data-product_id="<?php echo esc_attr( $variant_id ); ?>"></div>
+					<div
+						class="yith_ywraq_add_item_response-<?php echo esc_attr( $variant_id ); ?> yith_ywraq_add_item_response_message <?php echo esc_attr( ( ! $exists ) ? 'hide' : 'show' ); ?> hide-when-removed"
+						data-product_id="<?php echo esc_attr( $product_id ); ?>"
+						style="display:<?php echo ( ! $exists ) ? 'none' : 'block'; ?>"><?php echo esc_html( ywraq_get_label( 'already_in_quote' ) ); ?></div>
+					<div
+						class="yith_ywraq_add_item_browse-list-<?php echo esc_attr( $variant_id ); ?> yith_ywraq_add_item_browse_message  <?php echo esc_attr( ( ! $exists ) ? 'hide' : 'show' ); ?> hide-when-removed"
+						style="display:<?php echo esc_attr( ( ! $exists ) ? 'none' : 'block' ); ?>"
+						data-product_id="<?php echo esc_attr( $product_id ); ?>"><a
+							href="<?php echo esc_url( $rqa_url ); ?>"><?php echo esc_html( $label_browse ); ?></a></div>
 				</div>
-						<div
-					class="yith_ywraq_add_item_product-response-<?php echo esc_attr( $variant_id ); ?> yith_ywraq_add_item_product_message hide hide-when-removed"
-					style="display:none" data-product_id="<?php echo esc_attr( $variant_id ); ?>"></div>
-				<div
-					class="yith_ywraq_add_item_response-<?php echo esc_attr( $variant_id ); ?> yith_ywraq_add_item_response_message <?php echo esc_attr( ( ! $exists ) ? 'hide' : 'show' ); ?> hide-when-removed"
-					data-product_id="<?php echo esc_attr( $product_id ); ?>"
-					style="display:<?php echo ( ! $exists ) ? 'none' : 'block'; ?>"><?php echo esc_html( ywraq_get_label( 'already_in_quote' ) ); ?></div>
-				<div
-					class="yith_ywraq_add_item_browse-list-<?php echo esc_attr( $variant_id ); ?> yith_ywraq_add_item_browse_message  <?php echo esc_attr( ( ! $exists ) ? 'hide' : 'show' ); ?> hide-when-removed"
-					style="display:<?php echo esc_attr( ( ! $exists ) ? 'none' : 'block' ); ?>"
-					data-product_id="<?php echo esc_attr( $product_id ); ?>"><a
-						href="<?php echo esc_url( $rqa_url ); ?>"><?php echo esc_html( $label_browse ); ?></a></div>
-			</div>
 
-		</form>
-		<?php
+			</form>
+			<?php
 
+		}
+		// echo ob_get_clean(); // For version 1.6.0 or above
+		echo ob_get_clean();	
+		
 	}
-	echo ob_get_clean();	
+	else{
+		// echo $default; // For version 1.6.0 or above
+		echo $default;
+	}
 }, 10, 6);
 
 
@@ -2194,10 +2203,13 @@ add_action('template_redirect', function(){
 
 	if( is_woocommerce() ){
 		$adding_to_quote = wc_get_product( get_the_ID() );
+		
+		if( is_a( $adding_to_quote, 'WC_Product_Variable' ) ){
 
-		if( $adding_to_quote->is_type( 'variable' ) ){
- 			//remove_action( 'woocommerce_single_product_summary', array( YITH_YWRAQ_Frontend::get_instance(), 'add_button_single_page' ), 35 );
-			remove_action( 'woocommerce_before_single_product', array( YITH_YWRAQ_Frontend::get_instance(), 'show_button_single_page' ), 0 );
+			if( $adding_to_quote->is_type( 'variable' ) ){
+				//remove_action( 'woocommerce_single_product_summary', array( YITH_YWRAQ_Frontend::get_instance(), 'add_button_single_page' ), 35 );
+				remove_action( 'woocommerce_before_single_product', array( YITH_YWRAQ_Frontend::get_instance(), 'show_button_single_page' ), 0 );
+			}
 		}
 	}
 
