@@ -1,4 +1,5 @@
-### = 1.6.0 [13-11-2024] Wednesday =
+### = 1.6.0 [29-11-2024] Friday =
+* Fix: Cart Notice fragments, according to the latest WooCommerce Ajax cart setup.
 * Update: Codebase based on Plugin Check Plugin(PCP).
 * Dev: `pvtfw_row_cart_btn_is` & `pvtfw_row_cart_btn_oos` now located at compatibility.php. Any snippet you are using with the mentioned filter hooks should use `echo` rather than `return`.
 * Compatibility: WordPress 6.7.
