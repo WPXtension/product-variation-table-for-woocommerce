@@ -1,4 +1,4 @@
-### 1.6.0 [29-11-2024] Friday =
+### = 1.6.0 [29-11-2024] Friday =
 * Update: Codebase based on Plugin Check Plugin(PCP).
 * Feature: Global variation table condition option.
 * Feature: Exclude/Include condition option for Shortcode.
