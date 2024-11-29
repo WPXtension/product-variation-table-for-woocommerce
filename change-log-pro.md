@@ -1,7 +1,9 @@
-### = 1.6.0 [13-11-2024] Wednesday =
+### 1.6.0 [29-11-2024] Friday =
 * Update: Codebase based on Plugin Check Plugin(PCP).
 * Feature: Global variation table condition option.
 * Feature: Exclude/Include condition option for Shortcode.
+* Dev: `pvtfw_row_cart_btn_is` & `pvtfw_row_cart_btn_oos` now located at compatibility.php. Any snippet you are using with the mentioned filter hooks should use `echo` rather than `return`.
+* Dev: Removed `pvt_yith_wishlist_cart_btn_reposition` & `pvt_ti_wishlist_cart_btn_reposition` to reposition the Add to Cart Button with wishlists. To avoid WP Code Standard issues.
 * Compatibility: WordPress 6.7.
 
 ### = 1.5.4 [05-09-2024] Thursday =
