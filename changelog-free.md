@@ -1,3 +1,6 @@
+### = 1.6.1 [11-12-2024] Wednesday =
+* Update: Ajax cart code as per WooCommerce Ajax Cart.
+
 ### = 1.6.0 [29-11-2024] Friday =
 * Fix: Cart Notice fragments, according to the latest WooCommerce Ajax cart setup.
 * Update: Codebase based on Plugin Check Plugin(PCP).
