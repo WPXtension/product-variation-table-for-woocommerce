@@ -1,3 +1,8 @@
+### = 1.6.2 [24-12-2024] Tuesday =
+* Fix: Minor conditional fix.
+* Update: Codebase based on Plugin Check Plugin(PCP).
+* Tested: with WooCommerce 9.5.
+
 ### = 1.6.1 [11-12-2024] Wednesday =
 * Update: Bulk Ajax cart code as per WooCommerce Ajax Cart.
 
