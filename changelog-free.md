@@ -1,3 +1,9 @@
+### = 1.6.2 [24-12-2024] Tuesday =
+* Fix: Minor conditional fix.
+* Enhancement: UI of Advanced tab.
+* Update: Codebase based on Plugin Check Plugin(PCP).
+* Compatibility: WooCommerce 9.5.
+
 ### = 1.6.1 [11-12-2024] Wednesday =
 * Update: Ajax cart code as per WooCommerce Ajax Cart.
 
