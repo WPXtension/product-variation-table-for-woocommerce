@@ -1,3 +1,6 @@
+### = 1.6.3 [07-01-2024] Tuesday =
+* Update: $option['action'][] array edited and replaced `is_in_stock()` with `get_stock_status()`.
+
 ### = 1.6.2 [24-12-2024] Tuesday =
 * Fix: Minor conditional fix.
 * Update: Codebase based on Plugin Check Plugin(PCP).
