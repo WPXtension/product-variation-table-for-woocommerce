@@ -1,3 +1,9 @@
+### = 1.6.3 [07-01-2024] Tuesday =
+* Add: Backorder variation listed in the variation table.
+* Update: $option['action'][] array edited and replaced `is_in_stock()` with `get_stock_status()`.
+* Update: Conditional changes for In Stock and Out of Stock button markup.
+* Dev: `pvtfw_cart_btn_after_backorder_text` filter hook added. To rewrite the backorder text with the add-to-cart button. To disable it: `add_filter('pvtfw_cart_btn_after_backorder_text', '__return_false');`
+
 ### = 1.6.2 [24-12-2024] Tuesday =
 * Fix: Minor conditional fix.
 * Enhancement: UI of Advanced tab.
