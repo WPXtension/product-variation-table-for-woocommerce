@@ -1,3 +1,11 @@
+### = 1.6.4 [10-02-2025] Monday =
+* Dev: Added `pvtfw_available_btn_product_id` for available options id.
+* Dev: Added `pvtfw_variation_table_heading_after` for table heading.
+* Update: Table sorting script.
+* Update: Settings page.
+* Update: Scripts and added necessary trigger.
+* Compatibility: WooCommerce 9.6.
+
 ### = 1.6.3 [07-01-2024] Tuesday =
 * Add: Backorder variation listed in the variation table.
 * Update: $option['action'][] array edited and replaced `is_in_stock()` with `get_stock_status()`.
