@@ -5,7 +5,7 @@
 * Update: Scripts and added necessary trigger.
 * Tested: WooCommerce 9.6.
 
-### = 1.6.3 [07-01-2024] Tuesday =
+### = 1.6.3 [07-01-2025] Tuesday =
 * Update: $option['action'][] array edited and replaced `is_in_stock()` with `get_stock_status()`.
 
 ### = 1.6.2 [24-12-2024] Tuesday =
