@@ -1,3 +1,10 @@
+### = 1.6.4 [10-02-2025] Monday =
+* Fix: `Search...` text to translate for table search box placeholder.
+* Feature: Table popup option for global and individual product settings.
+* Update: Settings page.
+* Update: Scripts and added necessary trigger.
+* Tested: WooCommerce 9.6.
+
 ### = 1.6.3 [07-01-2024] Tuesday =
 * Update: $option['action'][] array edited and replaced `is_in_stock()` with `get_stock_status()`.
 
