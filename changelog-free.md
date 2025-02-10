@@ -6,7 +6,7 @@
 * Update: Scripts and added necessary trigger.
 * Compatibility: WooCommerce 9.6.
 
-### = 1.6.3 [07-01-2024] Tuesday =
+### = 1.6.3 [07-01-2025] Tuesday =
 * Add: Backorder variation listed in the variation table.
 * Update: $option['action'][] array edited and replaced `is_in_stock()` with `get_stock_status()`.
 * Update: Conditional changes for In Stock and Out of Stock button markup.
