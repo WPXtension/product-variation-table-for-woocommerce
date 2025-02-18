@@ -1,3 +1,6 @@
+### = 1.6.4.1 [18-02-2025] Tuesday =
+* Update: Availability condition.
+
 ### = 1.6.4 [10-02-2025] Monday =
 * Dev: Added `pvtfw_available_btn_product_id` for available options id.
 * Dev: Added `pvtfw_variation_table_heading_after` for table heading.
