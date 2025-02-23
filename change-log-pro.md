@@ -1,3 +1,10 @@
+### = 1.7.0 [22-02-2025] Sunday =
+* Update: Settings framework.
+* Feature: Table designing options.
+* Update:`$options` array.
+* Update: Scripts and added necessary trigger.
+* Check: WPCS.
+
 ### = 1.6.4 [10-02-2025] Monday =
 * Fix: `Search...` text to translate for table search box placeholder.
 * Feature: Table popup option for global and individual product settings.
