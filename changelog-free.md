@@ -1,3 +1,10 @@
+### = 1.7.0 [22-02-2025] Sunday =
+* Update: Settings framework.
+* Update:`$options` array.
+* Update: Availability text condition and optimize the code at compatiblilty.php.
+* Update: Scripts and added necessary trigger.
+* Check: WPCS.
+
 ### = 1.6.4.1 [18-02-2025] Tuesday =
 * Update: Availability condition.
 
