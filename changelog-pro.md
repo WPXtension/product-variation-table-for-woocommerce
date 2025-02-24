@@ -1,4 +1,7 @@
-### = 1.7.0 [22-02-2025] Sunday =
+### = 1.7.1 [24-02-2025] Monday =
+* Update: Added classes for checkbox <td> to target it and use it for future.
+
+### = 1.7.0 [23-02-2025] Sunday =
 * Update: Settings framework.
 * Feature: Table designing options.
 * Update:`$options` array.
