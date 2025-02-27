@@ -1,3 +1,7 @@
+### = 1.7.2 [27-02-2025] Thursday =
+* Update: Used static function of (Min, Max) plugin.
+* Tested: Compatibility WooCommerce 9.7.
+
 ### = 1.7.1 [24-02-2025] Monday =
 * Update: Added classes for checkbox <td> to target it and use it for future.
 
