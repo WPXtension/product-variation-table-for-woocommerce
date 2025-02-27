@@ -1,3 +1,7 @@
+### = 1.7.2 [27-02-2025] Thursday =
+* Security: Checked codebase.
+* Compatibility: WooCommerce 9.7.
+
 ### = 1.7.1 [24-02-2025] Monday =
 * Update: CSS and checked with autoprefixers.
 
