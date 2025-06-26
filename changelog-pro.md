@@ -1,3 +1,10 @@
+### = 1.7.3 [26-06-2025] Thursday =
+* Feature: Attribute Filter.
+* Update: Script.
+* Update: Dropped a third-party jQuery library.
+* Update: Compatibility with `Fast Cart for WooCommerce` plugin's `Popup` feature.
+* Compatibility: WooCommerce 9.9 & WordPress 6.8.
+
 ### = 1.7.2 [27-02-2025] Thursday =
 * Update: Used static function of (Min, Max) plugin.
 * Tested: Compatibility WooCommerce 9.7.
