@@ -1,3 +1,8 @@
+### = 1.7.3 [26-06-2025] Thursday =
+* Update: Script for decimal values when used `hide-trailing-zeros-on-prices`.
+* Update: Compatibility with `Fast Cart for WooCommerce` plugin's `Popup` feature.
+* Compatibility: WooCommerce 9.9 & WordPress 6.8.
+
 ### = 1.7.2 [27-02-2025] Thursday =
 * Security: Checked codebase.
 * Compatibility: WooCommerce 9.7.
