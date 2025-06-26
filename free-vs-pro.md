@@ -21,3 +21,4 @@
 | Vertical Scrollbar with Height option for the Variation Table                                                                                          | ❌    | ✔️  |
 | Global condition of displaying variation table                                                                                                         | ❌    | ✔️  |
 | Exclude and Include condition for Variation Table Shortcode                                                                                            | ❌    | ✔️  |
+| Enable attribute dropdown to filter table data.                                                                                            | ❌    | ✔️  |
