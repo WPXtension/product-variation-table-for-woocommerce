@@ -1,3 +1,11 @@
+### = 1.7.4 [13-08-2025] Wednesday =
+* Update: Script (to return the first quantity value after successful bulk carted).
+* Update: Script (attribute filter will work if used Variation Swatches and the dropdown converts to swatches).
+* Tweak: By default, the attribute filter will be enabled.
+* Fix: The attribute filter was not working when the attribute value in two words. For example: Ocean Blue
+* Fix: Style (to display attribute filter in correct place).
+* Compatibility: WooCommerce 10.1.0.
+
 ### = 1.7.3 [26-06-2025] Thursday =
 * Feature: Attribute Filter.
 * Update: Script.
