@@ -1,3 +1,9 @@
+### = 1.7.4 [13-08-2025] Wednesday =
+* Update: Script (to return the first quantity value after successful carted).
+* Remove: `load_plugin_textdomain()` as it has been discouraged since WordPress version 4.6. When a plugin is hosted on WordPress.org, it is not necessary to manually include this function call for translations under the plugin slug. WordPress will automatically load the translations when needed.
+* Fix: Style (to display table header in correct place).
+* Compatibility: WooCommerce 10.1.0.
+
 ### = 1.7.3 [26-06-2025] Thursday =
 * Update: Script for decimal values when used `hide-trailing-zeros-on-prices`.
 * Update: Compatibility with `Fast Cart for WooCommerce` plugin's `Popup` feature.
