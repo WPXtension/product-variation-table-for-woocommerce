@@ -1,3 +1,9 @@
+### = 1.8.0 [25-09-2025] Thursday =
+* Update: Script.
+* Update: Settings fields.
+* Add: Hook `pvtfw_oos_msg_instead_qty_field`.
+* Compatibility: WooCommerce 10.2.1.
+
 ### = 1.7.4 [13-08-2025] Wednesday =
 * Update: Script (to return the first quantity value after successful carted).
 * Remove: `load_plugin_textdomain()` as it has been discouraged since WordPress version 4.6. When a plugin is hosted on WordPress.org, it is not necessary to manually include this function call for translations under the plugin slug. WordPress will automatically load the translations when needed.
