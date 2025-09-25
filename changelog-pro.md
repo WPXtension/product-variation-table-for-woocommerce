@@ -1,3 +1,9 @@
+### = 1.8.0 [25-09-2025] Thursday =
+* Feature: Cart an item quickly just after changing the quantity field.
+* Update: Script.
+* Update: Settings fields.
+* Compatibility: WooCommerce 10.2.1.
+
 ### = 1.7.4 [13-08-2025] Wednesday =
 * Update: Script (to return the first quantity value after successful bulk carted).
 * Update: Script (attribute filter will work if used Variation Swatches and the dropdown converts to swatches).
