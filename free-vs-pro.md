@@ -22,3 +22,4 @@
 | Global condition of displaying variation table                                                                                                         | ❌    | ✔️  |
 | Exclude and Include condition for Variation Table Shortcode                                                                                            | ❌    | ✔️  |
 | Enable attribute dropdown to filter table data.                                                                                            | ❌    | ✔️  |
+| Enable Quick Cart - Quickly update the cart item by changing the quantity.                                                                                            | ❌    | ✔️  |
