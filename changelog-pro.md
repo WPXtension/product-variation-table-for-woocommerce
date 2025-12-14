@@ -1,3 +1,19 @@
+### = 1.9.0 [14-12-2025] Sunday =
+* Added: WPML & Polylang Support.
+* Updated: $options array to add product name to the add-to-cart button.
+* Update: All hooks follow the Plugin Check Plugin (PCP) WPCS coding standards. If you’ve added custom code using PVT php hooks/functions, please replace the `pvt_` prefixes with `pvtfw_`.
+* Dev: Hooks Information- 
+	- **Previous:** `pvt_pro_show_bulk_cart_msg` **Current:** `pvtfw_pro_show_bulk_cart_msg`.
+	- **Previous:** `pvt_skip_some_variation` **Current:** `pvtfw_skip_some_variation`.
+	- **Previous:** `pvt_woocommerce_quantity_input_args` **Current:** `pvtfw_woocommerce_quantity_input_args`.
+	- **Previous:** `pvt_oos_text_on_quantity_column` **Current:** `pvtfw_oos_text_on_quantity_column`.
+	- **Previous:** `disable_pvt_yith_wishlist_free` **Current:** `pvtfw_disable_yith_wishlist_free`.
+	- **Previous:** `disable_pvt_ti_wishlist_free` **Current:** `pvtfw_disable_ti_wishlist_free`.
+	- **Previous:** `disable_pvt_back_in_stock_notifier_free` **Current:** `pvtfw_disable_back_in_stock_notifier_free`.
+	- **Previous:** `all_pvt_pro_options` **Current:** `pvtfw_pro_all_options`.
+	- **Note** The JavaScript events/triggers remain in their current state.
+* Compatibility: WordPress 6.9 & WooCommerce 10.4.2.
+
 ### = 1.8.0 [25-09-2025] Thursday =
 * Feature: Cart an item quickly just after changing the quantity field.
 * Update: Script.
