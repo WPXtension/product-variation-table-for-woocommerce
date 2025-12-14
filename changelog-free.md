@@ -1,3 +1,26 @@
+### = 1.9.0 [14-12-2025] Sunday =
+* Added: WPML & Polylang Support.
+* Updated: $options array to add product name to the add-to-cart button.
+* Updated: Stylesheet to apply plugin settings for table footer.
+* Update: All hooks follow the Plugin Check Plugin (PCP) WPCS coding standards. If you’ve added custom code using PVT php hooks/functions, please replace the `pvt_` prefixes with `pvtfw_`.
+* Dev: Hooks Information- 
+	- **Previous:** `disable_pvt_to_apply` **Current:** `pvtfw_disable_to_apply`.
+	- **Previous:** `disable_pvt_table_markup_to_apply` **Current:** `pvtfw_disable_table_markup_to_apply`.
+	- **Previous:** `disable_pvt_shortcode_to_apply` **Current:** `pvtfw_disable_shortcode_to_apply`.
+	- **Previous:** `disable_pvt_to_show_available_option` **Current:** `pvtfw_disable_to_show_available_option`.
+	- **Previous:** `all_pvt_options` **Current:** `pvtfw_all_options`.
+	- **Previous:** `pvt_allowed_tags` **Current:** `pvtfw_allowed_tags`.
+	- **Previous:** `pvt_skip_some_variation` **Current:** `pvtfw_skip_some_variation`.
+	- **Previous:** `pvt_woocommerce_quantity_input_args` **Current:** `pvtfw_woocommerce_quantity_input_args`.
+	- **Previous:** `pvt_global_attribute_terms` **Current:** `pvtfw_global_attribute_terms`.
+	- **Previous:** `pvt_custom_attribute_terms` **Current:** `pvtfw_custom_attribute_terms`.
+	- **Previous:** `pvt_print_qty_field` **Current:** `pvtfw_print_qty_field`.
+	- **Previous:** `pvt_print_cart_btn` **Current:** `pvtfw_print_cart_btn`.
+	- **Previous:** `pvt_after_quantity_field_markup` **Current:** `pvtfw_after_quantity_field_markup`.
+	- **Previous:** `disable_pvt_to_remove_add_to_cart` **Current:** `pvtfw_disable_to_remove_add_to_cart`.
+	- **Note** The JavaScript events/triggers remain in their current state.
+* Compatibility: WordPress 6.9 & WooCommerce 10.4.2.
+
 ### = 1.8.0 [25-09-2025] Thursday =
 * Update: Script.
 * Update: Settings fields.
