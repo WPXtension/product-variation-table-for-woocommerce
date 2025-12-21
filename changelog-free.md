@@ -1,3 +1,7 @@
+### = 1.9.1 [21-12-2025] Sunday =
+* Updated: Reordered attributes in `<button>` tags so the class attribute appears before any `data-*` attributes.
+* Updated: Replaced `<div>` elements with `<span>` elements inside `<button>` tags.
+
 ### = 1.9.0 [14-12-2025] Sunday =
 * Added: WPML & Polylang Support.
 * Updated: $options array to add product name to the add-to-cart button.
