@@ -1,3 +1,8 @@
+### = 1.9.2 [06-04-2026] Monday =
+* Security Update.
+* Update- content-tbody.php file.
+* Compatibility: WordPress 7.0 & WooCommerce 10.6.2.
+* 
 ### = 1.9.1 [21-12-2025] Sunday =
 * Updated: Reordered attributes in `<button>` tags so the class attribute appears before any `data-*` attributes.
 * Updated: Replaced `<div>` elements with `<span>` elements inside `<button>` tags.
