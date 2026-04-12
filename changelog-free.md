@@ -1,6 +1,6 @@
 ### = 1.9.3 [12-04-2026] Sunday =
 * Update- content-tbody.php file.
-* 
+
 ### = 1.9.2 [06-04-2026] Monday =
 * Security Update.
 * Update- content-tbody.php file.
