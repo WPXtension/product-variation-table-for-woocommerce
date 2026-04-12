@@ -1,3 +1,7 @@
+### = 1.9.3 [12-04-2026] Sunday =
+* Fix- `$options` array to add column dynamically.
+* Fix- Force updater.
+
 ### = 1.9.2 [06-04-2026] Monday =
 * Security Update.
 * Update: Codebase for performance.
