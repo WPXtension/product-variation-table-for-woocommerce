@@ -1,3 +1,8 @@
+### = 1.9.4 [06-07-2026] Monday =
+* Update- Optimize plugin main file code.
+* Update- content-tbody.php file.
+* Compatibility: WooCommerce 10.9.3.
+
 ### = 1.9.3 [12-04-2026] Sunday =
 * Update- content-tbody.php file.
 
