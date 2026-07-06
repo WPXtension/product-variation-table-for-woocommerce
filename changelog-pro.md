@@ -1,3 +1,8 @@
+### = 1.9.4 [06-07-2026] Monday =
+* Fix- Plugin updater. If the required version does not match, the plugin can be updated directly from the dashboard.
+* Update- Attribute Dropdown Filter script for strict attribute filter.
+* Compatibility: WooCommerce 10.9.3.
+
 ### = 1.9.3 [12-04-2026] Sunday =
 * Fix- `$options` array to add column dynamically.
 * Fix- Force updater.
